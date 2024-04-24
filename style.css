@@ -1,0 +1,10 @@
+body{
+  font-family: monospace;background-image: url("https://png.pngtree.com/background/20210709/original/pngtree-purple-beautiful-leaves-banner-background-material-picture-image_913955.jpg");background-size:cover;  
+}
+#date{
+    text-align: center;padding: 20px 
+}
+
+h2{
+    text-align: center;font-size: 30px;
+}
