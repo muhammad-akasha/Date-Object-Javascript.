@@ -1,5 +1,27 @@
 let timeLeftElement= document.getElementById("daylefttoclass");
-let timeLeftToClass = setInterval(function(){
+// let timeLeftToClass = setInterval(function(){
+//     let ourNextClass = new Date("4,26,2024 11:00");
+// let currDate = new Date();
+// let currMilli = currDate.getTime();
+// let timeMilli = ourNextClass.getTime();
+// let timeLeft = (timeMilli - currMilli)
+
+// let daysLeft = Math.floor((timeLeft /  1000 / 60 / 60 / 24));
+// let hoursLeft = Math.floor(( timeLeft % (1000 * 60 * 60 * 24 ) / (1000 * 60 * 60)))
+// let minutesLeft =  Math.floor( timeLeft % ( 1000 * 60 * 60 ) / (1000 * 60));
+// let secondsLeft =  Math.floor( timeLeft % (1000 * 60) / 1000)
+
+//     timeLeftElement.innerHTML ="<h2> Calculate Our Next Class Time Left </h2>"  + "<h2>" +  daysLeft + " DAYS " + hoursLeft + " HOURS " + minutesLeft + " MINUTES " + secondsLeft + " SECONDS LEFT  </h2> ";
+
+
+// if (timeLeft < 0){
+//     clearInterval(timeLeftToClass);
+//     console.log("Expired")
+// }
+// }
+// ,1000)
+
+function timeLeftToClass () {
     let ourNextClass = new Date("4,26,2024 11:00");
 let currDate = new Date();
 let currMilli = currDate.getTime();
@@ -19,8 +41,9 @@ if (timeLeft < 0){
     console.log("Expired")
 }
 }
-,1000)
 
+
+setInterval(timeLeftToClass,1000)
 
 function myTimer() {
     const date = new Date();
@@ -92,7 +115,7 @@ function myTimer() {
   }
   setInterval(myTimer, 1000);
   let countAfterBirth = document.getElementById("birthyear");
-  let getBirthDate = prompt("Enter Your Date Of Birth in This Formats month-day-year 3 5 2006 , 03-5-2001 and 3,5,2006 Otherwise you will get NAN").toString();
+  let getBirthDate = prompt("Enter Your Date Of Birth With Seperate With Space or , - / . Otherwise you will get NAN").toString();
   
   function calcuDays (birthDate) {
     let currDate = new Date();
