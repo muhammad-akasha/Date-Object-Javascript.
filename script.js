@@ -1,6 +1,6 @@
 let timeLeftElement= document.getElementById("daylefttoclass");
 // let timeLeftToClass = setInterval(function(){
-//     let ourNextClass = new Date("4,26,2024 11:00");
+//     let ourNextClass = new Date("4,29,2024 11:00");
 // let currDate = new Date();
 // let currMilli = currDate.getTime();
 // let timeMilli = ourNextClass.getTime();
