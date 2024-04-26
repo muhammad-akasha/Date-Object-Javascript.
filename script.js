@@ -1,6 +1,6 @@
 let timeLeftElement= document.getElementById("daylefttoclass");
 // let timeLeftToClass = setInterval(function(){
-//     let ourNextClass = new Date("4,29,2024 11:00");
+//     let ourNextClass = new Date("4,26,2024 11:00");
 // let currDate = new Date();
 // let currMilli = currDate.getTime();
 // let timeMilli = ourNextClass.getTime();
@@ -21,8 +21,10 @@ let timeLeftElement= document.getElementById("daylefttoclass");
 // }
 // ,1000)
 
+setInterval(timeLeftToClass,1000)
+
 function timeLeftToClass () {
-    let ourNextClass = new Date("4,26,2024 11:00");
+    let ourNextClass = new Date("4,29,2024 11:00");
 let currDate = new Date();
 let currMilli = currDate.getTime();
 let timeMilli = ourNextClass.getTime();
@@ -38,12 +40,9 @@ let secondsLeft =  Math.floor( timeLeft % (1000 * 60) / 1000)
 
 if (timeLeft < 0){
     clearInterval(timeLeftToClass);
-    console.log("Expired")
+    timeLeftElement.innerHTML ="<h2>Class Has Been Started Or Finished.</h2>"
 }
 }
-
-
-setInterval(timeLeftToClass,1000)
 
 function myTimer() {
     const date = new Date();
@@ -114,6 +113,8 @@ function myTimer() {
       "<h2 class='date'> DATE : " +day +",  " +month +" " +todayDate +", " +year +"<br>TIME : " +hours +" : " +minutes +" : " +seconds + " " + timePeriod +"</h2>";
   }
   setInterval(myTimer, 1000);
+
+  
   let countAfterBirth = document.getElementById("birthyear");
   let getBirthDate = prompt("Enter Your Date Of Birth With Seperate With Space or , - / . Otherwise you will get NAN").toString();
   
