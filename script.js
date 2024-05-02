@@ -2,7 +2,7 @@ let timeLeftElement= document.getElementById("daylefttoclass");
 setInterval(timeLeftToClass,1000)
 
 function timeLeftToClass () {
-    let ourNextClass = new Date("5,01,2024 11:00");
+    let ourNextClass = new Date("6,01,2024 11:00");
 let currDate = new Date();
 let currMilli = currDate.getTime();
 let timeMilli = ourNextClass.getTime();
